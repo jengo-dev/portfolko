@@ -3,33 +3,100 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Moje portfólio — začiatok</title>
-  <!-- Vzhľad stránky je v samostatnom súbore styles.css (vrstva CSS) -->
+  <meta name="theme-color" content="#0b0908">
+  <meta name="description" content="Portfólio Jána Sokola, dizajnéra digitálnych produktov a webov.">
+  <title>Ján Sokol — digitálny dizajn</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Hlavná navigácia">
+      <a class="wordmark" href="#domov" aria-label="Ján Sokol, domov">JS<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Otvoriť navigáciu">
+        <span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#projekty">Projekty</a>
+        <a href="#o-mne">O mne</a>
+        <a class="nav-contact" href="#kontakt">Napíš mi <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
 
-  <main class="uvitanie">
-    <div class="emoji">👋</div>
-    <h1>Tu vznikne moje portfólio</h1>
-    <p class="podtext">
-      Toto je štartová stránka kurzu <strong>Tvorba webstránok</strong>.
-      Odteraz ju budeš meniť ty — s pomocou AI asistenta.
-    </p>
+  <main>
+    <section class="hero shell" id="domov" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Dizajnér digitálnych produktov · Bratislava</p>
+        <h1 id="hero-title">Ján<br><span>Sokol.</span></h1>
+        <p class="hero-intro">Navrhujem digitálne zážitky, ktoré sú premyslené do detailu a príjemné na každý deň.</p>
+        <a class="text-link" href="#projekty">Pozrieť vybrané projekty <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art reveal" aria-label="Abstraktná kompozícia z kruhov a červeného svetla" role="img">
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+        <div class="art-disc"></div>
+        <span class="art-label">TVORBA<br>S CITOM</span>
+        <span class="art-index">01 — 25</span>
+      </div>
+      <div class="hero-foot reveal"><span>Nezávislý dizajnér</span><span>Digitálne · Odvážne · Ľudské</span></div>
+    </section>
 
-    <div class="karta">
-      <p class="karta-nadpis">Ako začať:</p>
-      <ol>
-        <li>Otvor <strong>Copilot Chat</strong> (ikona Copilota vpravo) — sem píšeš, čo chceš vytvoriť.</li>
-        <li>Tento súbor <code>index.html</code> si pozri v <strong>živom náhľade</strong>: pravý klik naň → <em>Show Preview</em>.</li>
-        <li>Choď na <strong>Blok 7</strong> kurzu a postupuj podľa neho.</li>
-      </ol>
-    </div>
+    <section class="projects section shell" id="projekty" aria-labelledby="projects-title">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">VÝBER Z TVORBY <span class="red-slash">/</span> 2023—25</p><h2 id="projects-title">Projekty<span class="accent">.</span></h2></div>
+        <p>Každý projekt začína otázkou.<br>Tu sú tri odpovede.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <a class="project-link" href="#kontakt" aria-label="Viac o projekte Nocturne">
+            <div class="project-visual visual-nocturne" aria-hidden="true">
+              <span class="visual-overline">NOCTURNE® — 2025</span>
+              <div class="nocturne-cover"><img src="img/images.jpeg" alt=""></div>
+              <span class="visual-corner">01 / 03</span>
+            </div>
+            <div class="project-info"><div><h3>Nocturne</h3><p>Identita · Hudobný label</p></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+          </a>
+        </article>
+        <article class="project-card reveal">
+          <a class="project-link" href="#kontakt" aria-label="Viac o projekte Forma">
+            <div class="project-visual visual-forma" aria-hidden="true">
+              <span class="visual-overline">FORMA — WELLNESS APP</span>
+              <div class="phone-frame"><div class="phone-top"><span>9:41</span><span>●●●</span></div><small>DNES PRE SEBA</small><strong>Spomaľ.<br>Nadýchni sa.</strong><div class="breath-ring"><span></span></div><div class="phone-nav"><i></i><i></i><i></i></div></div>
+              <span class="visual-corner">02 / 03</span>
+            </div>
+            <div class="project-info"><div><h3>Forma</h3><p>Produktový dizajn · Zdravie</p></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+          </a>
+        </article>
+        <article class="project-card reveal">
+          <a class="project-link" href="#kontakt" aria-label="Viac o projekte Atelier S">
+            <div class="project-visual visual-atelier" aria-hidden="true">
+              <span class="visual-overline">ATELIER S — 2024</span>
+              <div class="atelier-copy"><small>ARCHITEKTÚRA S POKOJOM</small><strong>Priestor<br>na život.</strong><span>Objavte naše bývanie <b>↗</b></span></div>
+              <div class="atelier-shape shape-a"></div><div class="atelier-shape shape-b"></div>
+              <span class="visual-corner">03 / 03</span>
+            </div>
+            <div class="project-info"><div><h3>Atelier S</h3><p>Web · Architektúra</p></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+          </a>
+        </article>
+      </div>
+    </section>
 
-    <p class="poznamka">
-      Keď spravíš prvú zmenu, tento text pokojne zmaž — je len na úvod.
-    </p>
+    <section class="about section" id="o-mne" aria-labelledby="about-title">
+      <div class="about-inner shell">
+        <p class="eyebrow reveal">TROCHU O MNE <span class="red-slash">/</span> 02</p>
+        <div class="about-content reveal">
+          <h2 id="about-title">Dobrý dizajn<br>začína <span>počúvaním.</span></h2>
+          <div class="about-text"><p>Som Ján, nezávislý dizajnér so záujmom o digitálne produkty, silné značky a malé detaily, ktoré robia veľký rozdiel.</p><p>Spájam jasné premýšľanie s citom pre vizuál. Od prvého náčrtu až po posledný pixel hľadám riešenia, ktoré dávajú zmysel ľuďom aj značkám.</p><a class="text-link" href="mailto:ahoj@jansokol.sk">Viac o mojej práci <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="about-meta reveal"><span>01 — STRATÉGIA</span><span>02 — IDENTITA</span><span>03 — DIGITÁL</span><span>04 — DETAIL</span></div>
+      </div>
+    </section>
   </main>
 
+  <footer class="footer shell" id="kontakt">
+    <div class="footer-top reveal"><p class="eyebrow">MÁTE NIEČO NA MYSLI? <span class="red-slash">/</span> 03</p><h2>Poďme to<br><span>vymyslieť.</span></h2><a class="contact-link" href="mailto:ahoj@jansokol.sk">ahoj@jansokol.sk <span aria-hidden="true">↗</span></a></div>
+    <div class="footer-bottom"><a class="wordmark" href="#domov" aria-label="Ján Sokol, späť na začiatok">JS<span>.</span></a><p>© <span id="year">2025</span> Ján Sokol. S citom a rozumom.</p><a href="#domov">Späť na začiatok ↑</a></div>
+  </footer>
 </body>
 </html>
